@@ -1,0 +1,124 @@
+.card_slider{
+    margin: 0 auto;
+    width: 3258px;
+    gap: 10px;
+}
+.card{
+    width: 400px;
+    height: fit-content; 
+    display: flex;  
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+}
+.card-img{
+    width: fit-content;
+    justify-content: center;
+    height: 200px;
+    box-shadow: -6px -10px 24px -8px rgba(0,0,0,0.43);
+-webkit-box-shadow: -6px -10px 24px -8px rgba(0,0,0,0.43);
+-moz-box-shadow: -6px -10px 24px -8px rgba(0,0,0,0.43);
+margin: 1rem;
+
+}
+.card-name{
+    font-weight: bolder;
+    color: var(--colorTitle);
+    font-size: 18pt;
+}
+.card-des{
+    margin: 3rem 1rem;
+    font-size: 13pt;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.facebook-icon{
+    height: 40px;
+    position: absolute;
+    padding: .5rem;
+    border-radius: 5px;
+    right: -35px;
+    background-color: rgb(97, 97, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: -1;
+    transition: 1s;
+    cursor: pointer;
+}
+.facebook-icon a {
+    text-decoration: none;
+    z-index: 2;
+}
+.twitter-icon a{
+    text-decoration: none;
+    color: var(--colorMenuSize);
+    position: absolute;
+    padding: .5rem;
+    border-radius: 5px;
+    right: -35px;
+    top: 45px;
+    background-color: rgb(97, 97, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: -1;
+    
+    cursor: pointer;
+}
+
+.phone-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.phone-card:hover img{
+    transform: scale(1.09);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.phone-card .phone-card_hover{
+    position: absolute;
+    top: -100%;
+   box-sizing: border-box;
+    left: 0;
+   right: 0;
+   opacity: 1;
+}
+.phone-card:hover .phone-card_hover{
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#saberMas{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+ 
+ #saberMas a{
+     width: 100px;
+     border-radius: 10px;
+     font-size: 12pt;
+     font-weight: 600;
+      background-color: black;
+      color: white;
+      cursor:pointer;
+ }
+ #saberMas a:hover{
+     color: black;
+     background-color: white;
+     transition: 0.5s
+
+ }
