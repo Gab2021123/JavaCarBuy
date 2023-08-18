@@ -29,7 +29,6 @@
     ArrayList<Producto> Lista = new ArrayList<Producto>();
     Lista = pdao.listar();
     HttpSession MiSesion = request.getSession();
-	
 	%>
 	
 <body style="   height: 100%;
